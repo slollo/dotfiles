@@ -1,0 +1,37 @@
+extends cpp
+
+snippet ios "include iostream"
+#include <iostream>
+endsnippet
+
+snippet cout
+std::cout << 
+endsnippet
+
+snippet cerr
+std::cerr << 
+endsnippet
+
+snippet endl
+std::endl
+endsnippet
+
+snippet string
+std::string 
+endsnippet
+
+snippet sptr
+std::shared_ptr<${1:type}> ${2:name};
+endsnippet
+
+snippet logd
+LogEmitter(slDebug)() << 
+endsnippet
+
+snippet main
+int main(int /*argc*/, char** /*argv*/)
+{
+	${0};
+	return 0;
+}
+endsnippet

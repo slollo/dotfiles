@@ -1,0 +1,14 @@
+#!/usr/bin/python
+# coding: utf-8
+#      %vim%filename%
+"""
+"""
+
+import sys
+
+
+def main(argv):
+    pass
+
+if __name__ == "__main__":
+    main(sys.argv)
