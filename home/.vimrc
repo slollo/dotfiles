@@ -282,6 +282,7 @@ Plugin 'Syntastic'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'a.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'bjoernd/vim-ycm-tex'
 Plugin 'bling/vim-airline'
 Plugin 'ctrlp.vim'
 Plugin 'danro/rename.vim'
@@ -302,8 +303,8 @@ Plugin 'python_import.vim'
 Plugin 'terryma/vim-expand-region'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-fugitive'
-Plugin 'vim-signature'
 Plugin 'vasconcelloslf/vim-interestingwords'
+Plugin 'vim-signature'
 
 filetype indent on
 filetype plugin on
