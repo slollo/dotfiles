@@ -1,3 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/env perl
 ##      %vim%filename%
+
+use warnings;
+use strict;
 
