@@ -171,10 +171,10 @@ prompt_status() {
 }
 
 prompt_vimode() {
-	if [[ "${KEYMAP}" == "main" ]]; then
-		prompt_segment cyan black "I"
-	else
+	if [[ "${KEYMAP}" == "vicmd" ]]; then
 		prompt_segment yellow black "N"
+	else
+		prompt_segment cyan black "I"
 	fi
 }
 
