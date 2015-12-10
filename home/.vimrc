@@ -98,26 +98,16 @@ imap <F10> <ESC>:make clean<CR>i
 "map <F12> :!ctags -R --languages=c++ --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 " disable right side keys
-map <up> <nop>
-imap <up> <nop>
-map <down> <nop>
-imap <down> <nop>
-map <left> <nop>
-imap <left> <nop>
-map <right> <nop>
-imap <right> <nop>
-map <insert> <nop>
-imap <insert> <nop>
-map <delete> <nop>
-imap <delete> <nop>
-map <home> <nop>
-imap <home> <nop>
-map <end> <nop>
-imap <end> <nop>
-map <PageUp> <nop>
-imap <PageUp> <nop>
-map <PageDown> <nop>
-imap <PageDown> <nop>
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+noremap <insert> <nop>
+noremap <delete> <nop>
+noremap <home> <nop>
+noremap <end> <nop>
+noremap <PageUp> <nop>
+noremap <PageDown> <nop>
 
 
 """
