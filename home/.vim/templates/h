@@ -19,4 +19,3 @@
 #define %vim%header_var%
 
 #endif /* %vim%header_var% */
-
