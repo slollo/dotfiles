@@ -1,4 +1,3 @@
-colorscheme dante
 syntax enable
 
 set pastetoggle=<F2>
@@ -211,12 +210,6 @@ if has("gui_running")
 		"set guifont=Terminus\ 15
 		set guifont=Hack\ 10
 	endif
-
-	colorscheme inkpot
-
-	" inkpot
-	highlight Tabs guibg=#2e2e37 guifg=#505050
-	autocmd BufWinEnter * let m = matchadd("Tabs", "\t")
 endif
 
 """
@@ -284,6 +277,7 @@ Plugin 'a.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bjoernd/vim-ycm-tex'
 Plugin 'bling/vim-airline'
+Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'ctrlp.vim'
 Plugin 'danro/rename.vim'
 Plugin 'ehamberg/vim-cute-python'
@@ -308,6 +302,18 @@ Plugin 'vim-signature'
 
 filetype indent on
 filetype plugin on
+
+if has("gui_running")
+	colorscheme Tomorrow-Night-Bright
+	" inkpot
+	"highlight Tabs guibg=#2e2e37 guifg=#505050
+	" Tomorrow-Night-Bright
+	highlight Tabs guibg=#151530 guifg=#505065
+	autocmd BufWinEnter * let m = matchadd("Tabs", "\t")
+	highlight Normal guibg=#000015
+else
+	colorscheme dante
+endif
 
 """
 " functions
