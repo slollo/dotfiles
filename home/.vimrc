@@ -258,6 +258,8 @@ let g:undotree_WindowLayout=4
 let g:undotree_DiffCommand="diff --unified=1"
 nnoremap <F5> :UndotreeToggle<cr>
 
+nnoremap <F3> :TagbarToggle<cr>
+
 """
 " vundle
 """
@@ -271,7 +273,6 @@ call vundle#rc()
 Plugin 'gmarik/vundle'
 
 Plugin 'SirVer/ultisnips'
-Plugin 'Syntastic'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'a.vim'
 Plugin 'airblade/vim-gitgutter'
@@ -286,6 +287,7 @@ Plugin 'hdima/python-syntax'
 Plugin 'honza/vim-snippets'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'luochen1990/rainbow'
+Plugin 'majutsushi/tagbar'
 Plugin 'mbbill/undotree'
 Plugin 'mhinz/vim-startify'
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -294,11 +296,14 @@ Plugin 'pep8'
 Plugin 'po.vim'
 Plugin 'powerman/vim-plugin-viewdoc'
 Plugin 'python_import.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'severin-lemaignan/vim-minimap'
 Plugin 'terryma/vim-expand-region'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vasconcelloslf/vim-interestingwords'
 Plugin 'vim-signature'
+Plugin 'wannesm/wmgraphviz.vim'
 
 filetype indent on
 filetype plugin on
