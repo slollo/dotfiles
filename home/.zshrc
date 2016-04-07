@@ -170,4 +170,4 @@ alias rec='arecord -t wav `date +%d%m%Y_%H-%M`.wav -c 2 -r 8000'
 alias reload='. ~/.zshrc'
 alias rubber='rubber -d'
 alias webshare='python -c "import SimpleHTTPServer;SimpleHTTPServer.test()"'
-
+alias ggrep='git grep'
