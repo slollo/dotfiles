@@ -178,10 +178,41 @@ prompt_vimode() {
 	fi
 }
 
+prompt_executiontime() {
+	NOW=`date '+%s.%N'`
+	elapsed=$(($NOW-$EXECTIME))
+	Selapsed=`echo $elapsed | sed 's/\..*//'`
+	ms=0.`echo $elapsed | sed 's/.*\.//'`
+	ms=$(($ms * 100))
+	days=$(($Selapsed / 86400))
+	Selapsed=$(($Selapsed % 86400))
+	hours=$(($Selapsed / 3600))
+	mins=$((($Selapsed % 3600) / 60))
+	secs=$(($Selapsed % 60))
+
+	timedelta=`echo $secs $ms | awk '{printf "%02d.%02d", $1, $2}'`
+	if [[ "$mins" != "0" ]]; then
+		timedelta=`echo $mins $timedelta | awk '{printf "%d:%s", $1, $2}'`
+	fi
+	if [[ "$hours" != "0" ]]; then
+		timedelta=`echo $hours $timedelta | awk '{printf "%d:%s", $1, $2}'`
+	fi
+	if [[ "$days" != "0" ]]; then
+		timedelta=`echo $days $timedelta | awk '{printf "%dd%%s", $1, $2}'`
+	fi
+	prompt_segment cyan black "$timedelta"
+}
+
+EXECTIME=`date '+%s.%N'`
+preexec() {
+	EXECTIME=`date '+%s.%N'`
+}
+
 ## Main prompt
 build_prompt() {
   RETVAL=$?
   prompt_vimode
+  prompt_executiontime
   prompt_status
   #prompt_virtualenv
   prompt_context
