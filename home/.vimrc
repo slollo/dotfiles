@@ -44,8 +44,6 @@ set spl=ru,uk,en " Языки для spell
 "set autochdir    " автоматически делать cd в дирректорию с редактируемым файлом
 "set completeopt=longest,menuone,preview
 set completeopt=menu
-"set tags+=~/src/tags/tags.all
-"set tags+=~/src/tags/tags.stl
 set guioptions-=T
 
 set wildmenu
