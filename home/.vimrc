@@ -345,8 +345,9 @@ function! s:format_template()
 	set report=999
 
 	let filename = expand('%:t')
+	let fullfilename = expand('%')
 	execute '%s/%vim%filename%/' . filename . '/geI'
-	let header_var = substitute(toupper(filename), '\.', '_', 'ge')
+	let header_var = substitute(toupper(fullfilename), '[\.\/]', '_', 'ge')
 	execute '%s/%vim%header_var%/' . header_var . '/geI'
 	execute '%s/%vim%year%/\=strftime("%Y")/geI'
 	"let filename_noext = expand("%:t:r")
@@ -356,4 +357,3 @@ function! s:format_template()
 
 	set report=2
 endfunction
-
