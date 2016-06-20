@@ -261,9 +261,6 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = '✗'
 let g:airline_symbols.linenr = ''
 
-vmap v <Plug>(expand_region_expand)
-vmap <C-v> <Plug>(expand_region_shrink)
-
 vmap <Enter> <Plug>(EasyAlign)
 nmap <Leader>a <Plug>(EasyAlign)
 
@@ -314,7 +311,6 @@ Plugin 'powerman/vim-plugin-viewdoc'
 Plugin 'python_import.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'severin-lemaignan/vim-minimap'
-Plugin 'terryma/vim-expand-region'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vasconcelloslf/vim-interestingwords'
