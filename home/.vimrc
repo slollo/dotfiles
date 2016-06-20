@@ -212,7 +212,7 @@ if has("gui_running")
 
 	if has('gui_gtk2')
 		"set guifont=Terminus\ 15
-		set guifont=Hack\ 10
+		set guifont=Hack\ 9
 	endif
 endif
 
