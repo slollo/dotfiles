@@ -246,6 +246,9 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 "let g:ycm_server_log_level = 'debug'
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 if !exists('g:airline_symbols')
 	let g:airline_symbols = {}
@@ -294,6 +297,7 @@ Plugin 'bling/vim-airline'
 Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'ctrlp.vim'
 Plugin 'danro/rename.vim'
+Plugin 'dyng/ctrlsf.vim'
 Plugin 'ehamberg/vim-cute-python'
 Plugin 'gregsexton/gitv'
 Plugin 'hdima/python-syntax'
@@ -303,6 +307,7 @@ Plugin 'luochen1990/rainbow'
 Plugin 'majutsushi/tagbar'
 Plugin 'mbbill/undotree'
 Plugin 'mhinz/vim-startify'
+Plugin 'mileszs/ack.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'pep8'
