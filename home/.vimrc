@@ -81,6 +81,10 @@ nmap <C-l> :tabnext<CR>
 imap <C-l> <ESC>:tabnext<CR>
 nmap <C-h> :tabprevious<CR>
 imap <C-h> <ESC>:tabprevious<CR>
+nmap <C-j> :-tabmove<CR>
+imap <C-j> <ESC>:-tabmove<CR>
+nmap <C-k> :+tabmove<CR>
+imap <C-k> <ESC>:+tabmove<CR>
 
 let g:pep8_map='<F6>'
 
@@ -215,7 +219,13 @@ endif
 """
 " plugins settings
 """
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#tab_min_count = 0
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#tabline#show_buffers = 0
+let g:airline#extensions#tabline#show_close_button = 0
 let g:airline#extensions#whitespace#mixed_indent_algo = 2
+let g:airline#extensions#tabline#left_alt_sep = ''
 let g:fugitive_git_executable = 'LANG=C git'
 let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 2
