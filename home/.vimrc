@@ -255,7 +255,7 @@ let g:syntastic_enable_signs = 1
 let g:syntastic_perl_lib_path = ['./lib', './lib/auto']
 let g:syntastic_python_checkers = ["pep8", "pylint", "python"]
 let g:ycm_key_list_select_completion = []
-let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
+"let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 "let g:ycm_server_log_level = 'debug'
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 
