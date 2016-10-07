@@ -138,6 +138,7 @@ autocmd FileType mail set spell
 " revision controls
 autocmd FileType svn set spell
 autocmd FileType git set spell
+autocmd FileType gitcommit set spell
 " TeX/LaTeX
 "autocmd FileType tex set langmap=''
 autocmd FileType tex set makeprg=rubber\ --warn\ boxes\ -d\ %\ 2>&1\ \\\|\ sed\ 's/-.*:/:/'
