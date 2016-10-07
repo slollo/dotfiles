@@ -122,8 +122,8 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 hosts=(${${${(f)"$(<$HOME/.ssh/known_hosts)"}%%\ *}%%,*})
 zstyle ':completion:*:hosts' hosts $hosts
 
-LANG=ru_RU.UTF-8
-LANGUAGE=ru_RU
+LANG=uk_UA.UTF-8
+LANGUAGE=uk_UA
 
 ### PS
 #local NOC="%{\e[0m%}"
