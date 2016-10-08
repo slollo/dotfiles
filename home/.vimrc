@@ -138,6 +138,7 @@ autocmd FileType mail set spell
 " revision controls
 autocmd FileType svn set spell
 autocmd FileType git set spell
+autocmd FileType gitcommit set spell
 " TeX/LaTeX
 "autocmd FileType tex set langmap=''
 autocmd FileType tex set makeprg=rubber\ --warn\ boxes\ -d\ %\ 2>&1\ \\\|\ sed\ 's/-.*:/:/'
@@ -182,6 +183,7 @@ autocmd BufNewFile  *.sh    0r ~/.vim/templates/sh
 autocmd BufNewFile  *.html  0r ~/.vim/templates/html
 autocmd BufNewFile  *.htm   0r ~/.vim/templates/html
 autocmd BufNewFile  *.tex   0r ~/.vim/templates/tex
+autocmd BufNewFile  *.dot   0r ~/.vim/templates/dot
 autocmd BufNewFile  *       call s:format_template()
 
 
@@ -239,6 +241,7 @@ let g:airline_mode_map = {
 			\ 'S'  : 'S',
 			\ '' : 'S',
 			\ }
+let g:buffergator_autoexpand_on_split = 0
 let g:fugitive_git_executable = 'LANG=C git'
 let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 2
@@ -255,7 +258,6 @@ let g:syntastic_enable_signs = 1
 let g:syntastic_perl_lib_path = ['./lib', './lib/auto']
 let g:syntastic_python_checkers = ["pep8", "pylint", "python"]
 let g:ycm_key_list_select_completion = []
-"let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 "let g:ycm_server_log_level = 'debug'
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 
@@ -312,6 +314,7 @@ Plugin 'ehamberg/vim-cute-python'
 Plugin 'gregsexton/gitv'
 Plugin 'hdima/python-syntax'
 Plugin 'honza/vim-snippets'
+Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'luochen1990/rainbow'
 Plugin 'majutsushi/tagbar'
