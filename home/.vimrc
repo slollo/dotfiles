@@ -261,6 +261,7 @@ let g:syntastic_python_checkers = ["pep8", "pylint", "python"]
 let g:ycm_key_list_select_completion = []
 "let g:ycm_server_log_level = 'debug'
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
+let g:easytags_async = 1
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
@@ -338,6 +339,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vasconcelloslf/vim-interestingwords'
 Plugin 'vim-signature'
 Plugin 'wannesm/wmgraphviz.vim'
+Plugin 'xolox/vim-easytags'
+Plugin 'xolox/vim-misc'
 
 filetype indent on
 filetype plugin on
