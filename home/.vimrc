@@ -302,6 +302,7 @@ call vundle#rc()
 " git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 Plugin 'gmarik/vundle'
 
+Plugin 'Conque-GDB'
 Plugin 'SirVer/ultisnips'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'a.vim'
