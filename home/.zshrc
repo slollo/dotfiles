@@ -133,7 +133,7 @@ LANGUAGE=uk_UA
 #local c4="%{\e[0;92m%}"
 #PS1="$(print "($NOC$c1%m$NOC)($c2%?$NOC)($c3%~$NOC)$c1%#$NOC ")"
 #RPS1="$(print "($c2%y$NOC)")"
-PATH="/home/lollo/.bin:/usr/games:$PATH"
+PATH="/home/lollo/.bin:$PATH"
 
 export CC='colorgcc'
 #export LS_COLORS='or=36;41:di=01;44;37:*exe=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.cr2=01;35:*.mov=01;35:*.mpg=01;35:*.mp4=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mkv=01;35:*.m4a=01;35:*.mp3=01;35:*.wav=01;35:*.vob=01;35:*.VOB=01;35:*.pdf=01;33:*.ps=01;33:*.dvi=01;33:*.djvu=33:*.djv=33:';
