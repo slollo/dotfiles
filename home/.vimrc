@@ -219,15 +219,16 @@ endif
 """
 " plugins settings
 """
+let g:airline#extensions#tabline#buffer_nr_show = 0
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#tab_min_count = 0
 let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#tabline#left_alt_sep = ''
 let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#tabline#show_close_button = 0
+let g:airline#extensions#tabline#show_splits = 0
+let g:airline#extensions#tabline#tab_min_count = 0
 let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#whitespace#mixed_indent_algo = 2
-let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline#extensions#tabline#buffer_nr_show = 0
 let g:airline_mode_map = {
 			\ '__' : '-',
 			\ 'n'  : 'N',
@@ -260,6 +261,7 @@ let g:syntastic_python_checkers = ["pep8", "pylint", "python"]
 let g:ycm_key_list_select_completion = []
 "let g:ycm_server_log_level = 'debug'
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
+let g:easytags_async = 1
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
@@ -300,6 +302,7 @@ call vundle#rc()
 " git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 Plugin 'gmarik/vundle'
 
+Plugin 'Conque-GDB'
 Plugin 'SirVer/ultisnips'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'a.vim'
@@ -311,6 +314,8 @@ Plugin 'ctrlp.vim'
 Plugin 'danro/rename.vim'
 Plugin 'dyng/ctrlsf.vim'
 Plugin 'ehamberg/vim-cute-python'
+Plugin 'glts/vim-magnum'
+Plugin 'glts/vim-radical'
 Plugin 'gregsexton/gitv'
 Plugin 'hdima/python-syntax'
 Plugin 'honza/vim-snippets'
@@ -331,13 +336,14 @@ Plugin 'python_import.vim'
 Plugin 'rdnetto/ycm-generator'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'scrooloose/syntastic'
-Plugin 'severin-lemaignan/vim-minimap'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vasconcelloslf/vim-interestingwords'
 Plugin 'vim-signature'
 Plugin 'wannesm/wmgraphviz.vim'
+Plugin 'xolox/vim-easytags'
+Plugin 'xolox/vim-misc'
 
 filetype indent on
 filetype plugin on
