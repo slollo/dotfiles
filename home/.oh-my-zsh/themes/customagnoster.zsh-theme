@@ -208,10 +208,10 @@ preexec() {
 	EXECTIME=`date '+%s.%N'`
 }
 
-## Main prompt
+## First prompt
 build_prompt() {
   RETVAL=$?
-  prompt_vimode
+  #prompt_vimode
   prompt_executiontime
   prompt_status
   #prompt_virtualenv
@@ -222,4 +222,14 @@ build_prompt() {
   prompt_end
 }
 
-PROMPT='%{%f%b%k%}$(build_prompt) '
+## First prompt
+build_prompt1() {
+	prompt_vimode
+	prompt_segment black black ""
+}
+
+precmd()
+{
+	print -P "$(build_prompt)"
+}
+PROMPT='$(build_prompt1)%{%f%b%k%}'
