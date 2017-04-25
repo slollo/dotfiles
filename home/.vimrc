@@ -242,7 +242,7 @@ let g:airline_mode_map = {
 			\ 'S'  : 'S',
 			\ '' : 'S',
 			\ }
-let g:buffergator_autoexpand_on_split = 0
+"let g:buffergator_autoexpand_on_split = 0
 let g:fugitive_git_executable = 'LANG=C git'
 let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 2
@@ -319,7 +319,7 @@ Plugin 'glts/vim-radical'
 Plugin 'gregsexton/gitv'
 Plugin 'hdima/python-syntax'
 Plugin 'honza/vim-snippets'
-Plugin 'jeetsukumaran/vim-buffergator'
+"Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'luochen1990/rainbow'
 Plugin 'majutsushi/tagbar'
