@@ -265,7 +265,6 @@ let g:syntastic_python_checkers = ["pep8", "pylint", "python"]
 let g:ycm_key_list_select_completion = []
 "let g:ycm_server_log_level = 'debug'
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
-let g:easytags_async = 1
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
@@ -396,3 +395,7 @@ augroup Binary
 	au BufWritePost *.bin if &bin | %!xxd
 	au BufWritePost *.bin set nomod | endif
 augroup END
+
+let g:easytags_async = 1
+set tags=./tags;
+let g:easytags_dynamic_files = 1
