@@ -75,14 +75,18 @@ cabbr Й q
 " Key bindings
 """
 " переключение табов на ctrl+стрелки
-nmap <C-l> :tabnext<CR>
-imap <C-l> <ESC>:tabnext<CR>
-nmap <C-h> :tabprevious<CR>
-imap <C-h> <ESC>:tabprevious<CR>
-nmap <C-j> :-tabmove<CR>
-imap <C-j> <ESC>:-tabmove<CR>
-nmap <C-k> :+tabmove<CR>
-imap <C-k> <ESC>:+tabmove<CR>
+nmap <C-l> :MBEbn<CR>
+imap <C-l> <ESC>:MBEbn<CR>
+nmap <C-h> :MBEbp<CR>
+imap <C-h> <ESC>:MBEbp<CR>
+"nmap <C-l> :tabnext<CR>
+"imap <C-l> <ESC>:tabnext<CR>
+"nmap <C-h> :tabprevious<CR>
+"imap <C-h> <ESC>:tabprevious<CR>
+"nmap <C-j> :-tabmove<CR>
+"imap <C-j> <ESC>:-tabmove<CR>
+"nmap <C-k> :+tabmove<CR>
+"imap <C-k> <ESC>:+tabmove<CR>
 
 let g:pep8_map='<F6>'
 
@@ -219,14 +223,14 @@ endif
 """
 " plugins settings
 """
-let g:airline#extensions#tabline#buffer_nr_show = 0
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail'
-let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline#extensions#tabline#show_buffers = 0
-let g:airline#extensions#tabline#show_close_button = 0
-let g:airline#extensions#tabline#show_splits = 0
-let g:airline#extensions#tabline#tab_min_count = 0
+"let g:airline#extensions#tabline#buffer_nr_show = 0
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#formatter = 'unique_tail'
+"let g:airline#extensions#tabline#left_alt_sep = ''
+"let g:airline#extensions#tabline#show_buffers = 0
+"let g:airline#extensions#tabline#show_close_button = 0
+"let g:airline#extensions#tabline#show_splits = 0
+"let g:airline#extensions#tabline#tab_min_count = 0
 let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#whitespace#mixed_indent_algo = 2
 let g:airline_mode_map = {
@@ -314,6 +318,7 @@ Plugin 'ctrlp.vim'
 Plugin 'danro/rename.vim'
 Plugin 'dyng/ctrlsf.vim'
 Plugin 'ehamberg/vim-cute-python'
+Plugin 'fholgado/minibufexpl.vim'
 Plugin 'glts/vim-magnum'
 Plugin 'glts/vim-radical'
 Plugin 'gregsexton/gitv'
