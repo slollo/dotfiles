@@ -1,0 +1,11 @@
+
+snippet setget
+@property
+def ${1:name}(self):
+    return self.__$1
+
+@$1.setter
+def $1(self, ${2:pname}):
+    self.__$1 = $2
+
+endsnippet

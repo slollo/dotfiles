@@ -35,3 +35,8 @@ int main(int /*argc*/, char** /*argv*/)
 	return 0;
 }
 endsnippet
+
+snippet setget
+void ${1:name}(${2:type} v) { m_$1 = v; }
+$2 $1() const { return m_$1; }
+endsnippet
