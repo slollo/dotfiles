@@ -357,6 +357,7 @@ Plugin 'vim-signature'
 Plugin 'wannesm/wmgraphviz.vim'
 Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
+Plugin 'yuttie/comfortable-motion.vim'
 
 filetype indent on
 filetype plugin on
