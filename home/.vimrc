@@ -293,6 +293,11 @@ nnoremap <F5> :UndotreeToggle<cr>
 nnoremap <F3> :TagbarToggle<cr>
 nnoremap <F4> :YcmCompleter FixIt<cr>
 
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+"map  n <Plug>(easymotion-next)
+"map  N <Plug>(easymotion-prev)
+
 """
 " vundle
 """
@@ -316,6 +321,7 @@ Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'ctrlp.vim'
 Plugin 'danro/rename.vim'
 Plugin 'dyng/ctrlsf.vim'
+Plugin 'easymotion/vim-easymotion'
 Plugin 'ehamberg/vim-cute-python'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'glts/vim-magnum'
