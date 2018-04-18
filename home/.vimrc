@@ -298,6 +298,9 @@ omap / <Plug>(easymotion-tn)
 "map  n <Plug>(easymotion-next)
 "map  N <Plug>(easymotion-prev)
 
+nnoremap <c-]> :CtrlPtjump<cr>
+vnoremap <c-]> :CtrlPtjumpVisual<cr>
+
 """
 " vundle
 """
@@ -330,6 +333,7 @@ Plugin 'gorodinskiy/vim-coloresque'
 Plugin 'gregsexton/gitv'
 Plugin 'hdima/python-syntax'
 Plugin 'honza/vim-snippets'
+Plugin 'ivalkeen/vim-ctrlp-tjump'
 "Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'luochen1990/rainbow'
