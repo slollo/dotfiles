@@ -99,6 +99,8 @@ nmap <F9> :make<CR>
 imap <F9> <ESC>:make<CR>i
 nmap <F10> :make clean<CR>
 imap <F10> <ESC>:make clean<CR>i
+nmap <Leader>] :cnext<CR>
+nmap <Leader>[ :cprevious<CR>
 
 "map <F12> :!ctags -R --languages=c++ --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
@@ -170,6 +172,9 @@ autocmd BufReadPost *.doc %!catdoc %
 " po
 autocmd FileType po nmap <F6> :call search('\(fuzzy\)\\|\( ""\n\n\)')<CR>
 autocmd FileType po imap <F6> <ESC>:call search('\(fuzzy\)\\|\( ""\n\n\)')<CR>
+" Qt
+autocmd BufEnter *.qrc,*.qrc.in set filetype=xml
+autocmd BufEnter *.ts set spell
 " project specifics
 autocmd BufRead */botikmon/* setlocal expandtab
 autocmd BufRead */bp/bp/*html setlocal filetype=htmldjango
