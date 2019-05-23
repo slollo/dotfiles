@@ -251,7 +251,6 @@ let g:airline_mode_map = {
 			\ 'S'  : 'S',
 			\ '' : 'S',
 			\ }
-"let g:buffergator_autoexpand_on_split = 0
 let g:fugitive_git_executable = 'LANG=C git'
 let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 2
@@ -297,7 +296,6 @@ let g:undotree_DiffCommand="diff --unified=1"
 nnoremap <F5> :UndotreeToggle<cr>
 
 nnoremap <F3> :TagbarToggle<cr>
-"nnoremap <F4> :YcmCompleter FixIt<cr>
 
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
@@ -321,7 +319,6 @@ Plugin 'gmarik/vundle'
 
 Plugin 'Conque-GDB'
 Plugin 'SirVer/ultisnips'
-"Plugin 'Valloric/YouCompleteMe'
 Plugin 'a.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bjoernd/vim-ycm-tex'
@@ -341,12 +338,10 @@ Plugin 'gregsexton/gitv'
 Plugin 'hdima/python-syntax'
 Plugin 'honza/vim-snippets'
 Plugin 'ivalkeen/vim-ctrlp-tjump'
-"Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'luochen1990/rainbow'
 Plugin 'majutsushi/tagbar'
 Plugin 'mbbill/undotree'
-Plugin 'mhinz/vim-startify'
 Plugin 'mileszs/ack.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'ntpeters/vim-better-whitespace'
@@ -381,7 +376,6 @@ else
 endif
 Plugin 'Shougo/deoplete-clangx'
 let g:deoplete#enable_at_startup = 1
-Plugin 'yuttie/comfortable-motion.vim'
 
 filetype indent on
 filetype plugin on
