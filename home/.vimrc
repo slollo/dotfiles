@@ -270,6 +270,7 @@ let g:syntastic_python_checkers = ["pep8", "pylint", "python"]
 let g:ycm_key_list_select_completion = []
 "let g:ycm_server_log_level = 'debug'
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
+let g:ale_completion_enabled = 1
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
@@ -296,7 +297,7 @@ let g:undotree_DiffCommand="diff --unified=1"
 nnoremap <F5> :UndotreeToggle<cr>
 
 nnoremap <F3> :TagbarToggle<cr>
-nnoremap <F4> :YcmCompleter FixIt<cr>
+"nnoremap <F4> :YcmCompleter FixIt<cr>
 
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
@@ -320,7 +321,7 @@ Plugin 'gmarik/vundle'
 
 Plugin 'Conque-GDB'
 Plugin 'SirVer/ultisnips'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'a.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bjoernd/vim-ycm-tex'
@@ -365,9 +366,20 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vasconcelloslf/vim-interestingwords'
 Plugin 'vhdirk/vim-cmake'
 Plugin 'vim-signature'
+Plugin 'w0rp/ale'
 Plugin 'wannesm/wmgraphviz.vim'
 Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
+
+if has('nvim')
+  Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plugin 'Shougo/deoplete.nvim'
+  Plugin 'roxma/nvim-yarp'
+  Plugin 'roxma/vim-hug-neovim-rpc'
+endif
+Plugin 'Shougo/deoplete-clangx'
+let g:deoplete#enable_at_startup = 1
 Plugin 'yuttie/comfortable-motion.vim'
 
 filetype indent on
