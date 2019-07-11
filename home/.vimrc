@@ -267,6 +267,12 @@ let g:syntastic_enable_signs = 1
 let g:syntastic_perl_lib_path = ['./lib', './lib/auto']
 let g:syntastic_python_checkers = ["pep8", "pylint", "python"]
 let g:ale_completion_enabled = 1
+let g:ale_fixers = {
+			\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+			\   'python': ['autopep8', 'isort'],
+			\   'cpp': ['clang-format'],
+			\   'c': ['clang-format'],
+			\}
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
