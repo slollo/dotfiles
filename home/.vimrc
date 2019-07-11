@@ -261,7 +261,6 @@ let g:airline_mode_map = {
 			\ 'S'  : 'S',
 			\ '' : 'S',
 			\ }
-let g:fugitive_git_executable = 'LANG=C git'
 let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 2
 let g:neocomplcache_enable_at_startup = 1
