@@ -216,8 +216,8 @@ if has("gui_running")
 	map <S-Insert> <MiddleMouse>
 	map! <S-Insert> <MiddleMouse>
 
-	nmap <C-S-Insert> "+gP
-	imap <C-S-Insert> <ESC>"+gPa
+	nmap <C-S-Insert> "+gp
+	imap <C-S-Insert> <ESC>"+gpa
 
 	if has('gui_gtk2')
 		"set guifont=Terminus\ 15
