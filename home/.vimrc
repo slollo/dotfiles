@@ -211,7 +211,11 @@ let python_highlight_all=1
 """
 " GUI specicifs
 """
-if has("gui_running")
+if has("gui_running") || has("nvim")
+	if has("nvim")
+		set mouse=a
+		vmap <LeftRelease> "*ygv
+	endif
 	" Make shift-insert work like in Xterm
 	map <S-Insert> <MiddleMouse>
 	map! <S-Insert> <MiddleMouse>
