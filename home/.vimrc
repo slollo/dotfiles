@@ -266,9 +266,6 @@ let g:syntastic_cppcheck_config_file = "--enable=all"
 let g:syntastic_enable_signs = 1
 let g:syntastic_perl_lib_path = ['./lib', './lib/auto']
 let g:syntastic_python_checkers = ["pep8", "pylint", "python"]
-let g:ycm_key_list_select_completion = []
-"let g:ycm_server_log_level = 'debug'
-let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 let g:ale_completion_enabled = 1
 
 if executable('ag')
@@ -297,8 +294,8 @@ nnoremap <F5> :UndotreeToggle<cr>
 
 nnoremap <F3> :TagbarToggle<cr>
 
-map  / <Plug>(easymotion-sn)
-omap / <Plug>(easymotion-tn)
+"map  / <Plug>(easymotion-sn)
+"omap / <Plug>(easymotion-tn)
 "map  n <Plug>(easymotion-next)
 "map  N <Plug>(easymotion-prev)
 
@@ -323,16 +320,15 @@ Plugin 'gmarik/vundle'
 Plugin 'morhetz/gruvbox'
 
 " functionality
-Plugin 'Conque-GDB'
+"Plugin 'Conque-GDB'
 Plugin 'SirVer/ultisnips'
 Plugin 'a.vim'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'bjoernd/vim-ycm-tex'
 Plugin 'bling/vim-airline'
 Plugin 'ctrlp.vim'
 Plugin 'danro/rename.vim'
 Plugin 'dyng/ctrlsf.vim'
-Plugin 'easymotion/vim-easymotion'
+"Plugin 'easymotion/vim-easymotion'
 Plugin 'ehamberg/vim-cute-python'
 Plugin 'elzr/vim-json'
 Plugin 'fholgado/minibufexpl.vim'
@@ -355,17 +351,14 @@ Plugin 'peterhoeg/vim-qml'
 Plugin 'po.vim'
 Plugin 'powerman/vim-plugin-viewdoc'
 Plugin 'python_import.vim'
-Plugin 'rdnetto/ycm-generator'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'tell-k/vim-autopep8'
+"Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vasconcelloslf/vim-interestingwords'
-Plugin 'vhdirk/vim-cmake'
 Plugin 'vim-signature'
 Plugin 'w0rp/ale'
 Plugin 'wannesm/wmgraphviz.vim'
