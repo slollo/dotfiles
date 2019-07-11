@@ -136,6 +136,12 @@ menu Кодировка.koi8-r       :e ++enc=koi8-r<CR>
 menu Кодировка.ibm-866      :e ++enc=ibm866<CR>
 map <F8> :emenu Кодировка.<TAB>
 
+""" fugitive Git 3-way merge
+imap <M-l> <ESC>:diffget //3<CR>:diffupdate<CR>i
+nmap <M-l> :diffget //3<CR>:diffupdate<CR>
+imap <M-h> <ESC>:diffget //2<CR>:diffupdate<CR>i
+nmap <M-h> :diffget //2<CR>:diffupdate<CR>
+
 """
 " Settings for FileTypes
 """
