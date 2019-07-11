@@ -37,7 +37,7 @@ int main(int /*argc*/, char** /*argv*/)
 endsnippet
 
 snippet setget
-void ${1:name}(${2:type} ${3:pname}) { _$1 = $3; }
+void ${1:name}(${2:type} new_$1) { _$1 = new_$1; }
 $2 $1() const { return _$1; }
 endsnippet
 
