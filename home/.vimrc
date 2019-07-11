@@ -317,13 +317,18 @@ call vundle#rc()
 " git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 Plugin 'gmarik/vundle'
 
+" themes
+"Plugin 'chriskempson/vim-tomorrow-theme'
+"Plugin 'nanotech/jellybeans.vim'
+Plugin 'morhetz/gruvbox'
+
+" functionality
 Plugin 'Conque-GDB'
 Plugin 'SirVer/ultisnips'
 Plugin 'a.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bjoernd/vim-ycm-tex'
 Plugin 'bling/vim-airline'
-Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'ctrlp.vim'
 Plugin 'danro/rename.vim'
 Plugin 'dyng/ctrlsf.vim'
@@ -380,16 +385,11 @@ let g:deoplete#enable_at_startup = 1
 filetype indent on
 filetype plugin on
 
-if has("gui_running")
-	colorscheme Tomorrow-Night-Bright
-	" inkpot
-	"highlight Tabs guibg=#2e2e37 guifg=#505050
-	" Tomorrow-Night-Bright
-	highlight Tabs guibg=#151530 guifg=#505065
+colorscheme gruvbox
+if has("gui_running") || has('nvim')
+	highlight Normal guibg=#100010
+	highlight Tabs guibg=#1c1818 guifg=#2c2828
 	autocmd BufWinEnter * let m = matchadd("Tabs", "\t")
-	highlight Normal guibg=#000015
-else
-	colorscheme dante
 endif
 
 """
