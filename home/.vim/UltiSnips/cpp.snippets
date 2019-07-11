@@ -40,3 +40,15 @@ snippet setget
 void ${1:name}(${2:type} ${3:pname}) { _$1 = $3; }
 $2 $1() const { return _$1; }
 endsnippet
+
+snippet cls
+class ${1:Name}
+{
+private:
+	${0:/* data */}
+
+public:
+	${1/(\w+).*/$1/} ();
+	virtual ~${1/(\w+).*/$1/} ();
+};
+endsnippet
