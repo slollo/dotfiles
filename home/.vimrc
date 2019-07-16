@@ -263,10 +263,7 @@ let g:airline_mode_map = {
 			\ }
 let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 2
-let g:neocomplcache_enable_at_startup = 1
 let g:rainbow_active = 1  " 0 if you want to enable it later via :RainbowToggle
-let g:startify_bookmarks = ['~/.vimrc',]
-let g:startify_skiplist = ['vimrc',]
 let g:syntastic_aggregate_errors = 1
 let g:syntastic_c_include_dirs = ['./app', 'libs']
 let g:syntastic_cpp_checkers = ["gcc", "cppcheck"] " cpplint
