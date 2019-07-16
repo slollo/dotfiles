@@ -279,6 +279,7 @@ let g:ale_fixers = {
 			\   'cpp': ['clang-format'],
 			\   'c': ['clang-format'],
 			\}
+let g:ctrlp_custom_ignore = "build.*/"
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
