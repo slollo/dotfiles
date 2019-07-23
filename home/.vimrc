@@ -106,20 +106,20 @@ nmap <Leader>[ :cprevious<CR>
 "map <F12> :!ctags -R --languages=c++ --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 " disable right side keys
-inoremap <Up> <NOP>
-inoremap <Down> <NOP>
-inoremap <Left> <NOP>
-inoremap <Right> <NOP>
+inoremap <Up> <nop>
+inoremap <Down> <nop>
+inoremap <Left> <nop>
+inoremap <Right> <nop>
 inoremap <insert> <nop>
 inoremap <delete> <nop>
 inoremap <home> <nop>
 inoremap <end> <nop>
 inoremap <PageUp> <nop>
 inoremap <PageDown> <nop>
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
 noremap <insert> <nop>
 noremap <delete> <nop>
 noremap <home> <nop>
