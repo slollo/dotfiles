@@ -201,6 +201,7 @@ autocmd BufNewFile  *.htm   0r ~/.vim/templates/html
 autocmd BufNewFile  *.tex   0r ~/.vim/templates/tex
 autocmd BufNewFile  *.dot   0r ~/.vim/templates/dot
 autocmd BufNewFile  *       call s:format_template()
+"autocmd BufReadPost *.*     call s:update_copyright()
 
 
 """
@@ -420,6 +421,17 @@ function! s:format_template()
 	"execute "%s/%vim%filename_ext%/". filename_ext . "/geI"
 
 	set report=2
+endfunction
+
+function! s:update_copyright()
+	let year = strftime("%Y")
+	let name = "Max V. Stotsky"
+	if match(readfile(expand("%:p")), "Copyright (C) " . year . " " . name) == -1
+		set report=999
+		execute '%s/\(Copyright (C) [0-9]\{4\}\) ' . name .'/\1-' . year . ' ' . name . '/geI'
+		execute '%s/\(Copyright (C) [0-9]\{4\}\)-[0-9]\{4\} ' . name .'/\1-' . year . ' ' . name . '/geI'
+		set report=2
+	endif
 endfunction
 
 " vim -b : edit binary using xxd-format!
