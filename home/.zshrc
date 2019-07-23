@@ -122,6 +122,7 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 hosts=(${${${(f)"$(<$HOME/.ssh/known_hosts)"}%%\ *}%%,*})
 zstyle ':completion:*:hosts' hosts $hosts
 
+export DEBEMAIL=maxstotsky@gmail.com
 export LC_ALL=uk_UA.UTF-8
 
 ### PS
