@@ -200,7 +200,7 @@ autocmd BufNewFile  *.html  0r ~/.vim/templates/html
 autocmd BufNewFile  *.htm   0r ~/.vim/templates/html
 autocmd BufNewFile  *.tex   0r ~/.vim/templates/tex
 autocmd BufNewFile  *.dot   0r ~/.vim/templates/dot
-autocmd BufNewFile  *       call s:format_template()
+autocmd BufNewFile  *.*     call s:format_template()
 "autocmd BufReadPost *.*     call s:update_copyright()
 
 
