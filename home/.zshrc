@@ -51,7 +51,7 @@ DEFAULT_USER="lollo"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting colored-man vi-mode git-prompt history-substring-search)
+plugins=(git colored-man-pages vi-mode git-prompt history-substring-search colorize vundle)
 
 # User configuration
 
